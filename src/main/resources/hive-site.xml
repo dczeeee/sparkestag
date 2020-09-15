@@ -1,0 +1,27 @@
+<configuration>
+	<property>
+		<name>javax.jdo.option.ConnectionURL</name>
+		<value>jdbc:mysql://VM-0-15-ubuntu:3306/hive?createDatabaseIfNotExist=true&amp;useSSL=false</value>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionDriverName</name>
+		<value>com.mysql.jdbc.Driver</value>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionUserName</name>
+		<value>root</value>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionPassword</name>
+		<value>Vkdbdev123@</value>
+	</property>
+	<property>
+		<name>hive.metastore.warehouse.dir</name>
+		<value>hdfs://VM-0-15-ubuntu:9000/user/hive/warehouse</value>
+	</property>
+	<property>
+		<name>hive.metastore.uris</name>
+		<value>thrift://VM-0-15-ubuntu:9083</value>
+		<description>Thrift uri for the remote metastore. Used by metastore client to connect to remote metastore.</description>
+	</property>
+</configuration>
